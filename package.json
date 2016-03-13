@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kamicut/node-rust-test",
   "dependencies": {
-    "ffi": "^2.0.0"
+    "ffi": "^2.0.0",
+    "mapnik": "^3.5.2"
   }
 }
