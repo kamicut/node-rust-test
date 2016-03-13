@@ -1,0 +1,24 @@
+{
+  "name": "node-rust-test",
+  "version": "0.0.1",
+  "description": "Testing node rust ffi",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-rust && npm run build-ffi",
+    "build-ffi": "(cd src/ffi && node-gyp configure build)",
+    "build-rust": "(cd rust && cargo build --release)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamicut/node-rust-test.git"
+  },
+  "author": "Marc Farra <marcfarra@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/kamicut/node-rust-test/issues"
+  },
+  "homepage": "https://github.com/kamicut/node-rust-test",
+  "dependencies": {
+    "ffi": "^2.0.0"
+  }
+}

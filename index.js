@@ -1,3 +1,3 @@
-var fractal = require('./native/build/Release/fractal.node');
+var fractal = require('./src/ffi');
 
-console.log(fractal.julia());
+console.log(fractal.julia(10));
